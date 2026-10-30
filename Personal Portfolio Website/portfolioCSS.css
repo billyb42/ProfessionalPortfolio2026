@@ -1,0 +1,484 @@
+/* William Boccasini
+    File: PortfolioCSS.css
+    Date: 7/2/26
+*/
+
+body, header, nav, main, footer, section, div, img, video, audio, h1, h2, h3, ul, li, p, table, caption, tr, th, td, form, fieldset, legend, label, input, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Global box sizing*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7fafc;
+    font-family: 'Open Sans', 'Arial', serif;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+img, video {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 6px;
+    margin: 1em auto;
+}
+
+video {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+    --cue-bg: rgba(74, 85, 104, 0.9);
+    --cue-color: #ffffff;
+}
+
+.caption-controls {
+    background-color: #eef2f5;
+    border: 1px solid #002147;
+    border-radius: 6px;
+    padding: 1em;
+    margin: 1.5em 0 0.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.sample-text-box {
+    background-color: #ebf8ff;
+    border-left: 5px solid #3182ce;
+    padding: 1.25em;
+    border-radius: 4px;
+    margin: 1.5em 0;
+}
+
+.highlight-popup {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 8px 12px;
+    border-radius: 6px;
+    z-index: 1000;
+    font-size: 0.85em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.highlight-popup a {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.highlight-popup a:hover {
+    text-decoration: underline;
+}
+
+.caption-controls {
+    background-color: #edf2f7;
+    border: 1px solid #4a5568;
+    border-radius: 6px;
+    padding: 1em;
+    margin: 1.5em 0 0.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.caption-controls h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2d3748;
+    margin: 0;
+    flex-basis: 100%;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.control-group label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.control-group select {
+    padding: 4px 8px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+}
+
+video::cue {
+    background-color: var(--cue-bg, rgba(--cue-bg));
+    color: var(--cue-color);
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 1.1em;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* taken out 6/29/26
+audio {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em auto;
+}
+*/
+
+header {
+    background-color: #4a5568;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5em 5%;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #ebf8ff;
+    margin-top: 0.5em;
+}
+
+nav {
+    background-color: #2d3748;
+    border-bottom: 4px solid #3182ce;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav li a {
+    display: block;
+    color: #ffffff;
+    padding: 1em 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav li a:hover {
+    background-color: #4a5568;
+    color: #ebf8ff;
+}
+
+main {
+    padding: 1.5em 4%;
+}
+
+section, .hobby-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+}
+
+main h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2d3748;
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 0.3em;
+}
+
+main h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4a5568;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+main p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+main ul {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+main li {
+    margin-bottom: 0.8em;
+    font-size: 1em;
+}
+
+.hobby-item {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px dashed #718096;
+}
+
+.accent-text {
+    color: #4a5568;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.text-link {
+    color: #3182ce;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.text-link:hover {
+    color: #485568;
+}
+
+/*Visibility classes*/
+.mobile-stack {
+    display: block;
+}
+
+/*added 6/29/26*/
+.desktop-matrix {
+    display: none;
+}
+
+fieldset {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid #edf2f7;
+    border-radius: 6px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0 0.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 0.8em;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 0.6em;
+    margin-top: 0.3em;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95em;
+}
+
+.radio-label {
+    display: block;
+    font-weight: normal;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 0.5em;
+}
+
+form .btn {
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    background-color: #4a5568;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background color 0.2s ease;
+}
+
+form .btn:hover {
+    background-color: #3182ce;
+}
+
+.linkedin-icon {
+    /*cleaning up Linkedin capability*/
+    display: inline;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border-radius: 0;
+}
+
+.desktop-only {
+    display: none;
+}
+
+footer {
+    background-color: #2d3748;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em 5%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+footer a {
+    color: #ebf8ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/*for tablets*/
+@media screen and (min-width: 768px) {
+    header {
+        padding: 3.5em 5%;
+    }
+
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        width: auto;
+        border-bottom: none;
+    }
+
+    nav li a {
+        padding: 1em 2em;
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+    }
+
+    form {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/*for desktops*/
+@media screen and (min-width: 1024px) {
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2.5em 2%;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav li a:focus {
+        background-color: #3182ce;
+        color: #ffffff;
+        outline: none;
+    }
+
+    .text-link:active {
+        color: #3182ce;
+    }
+
+    .desktop-only {
+        display: block;
+        margin-top: 1em;
+        padding: 1em;
+        background-color: #edf2f7;
+        border-left: 4px solid #3182ce;
+        border-radius: 4px;
+    }
+
+    /*Matrix rule inversion*/
+    .mobile-stack {
+        display: none;
+    }
+
+    .desktop-matrix {
+        display: block;
+        margin: 1.5em 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #edf2f7;
+    }
+
+    caption {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #2d3748;
+        text-align: left;
+        padding-bottom: 0.5 em;
+    }
+
+    th, td {
+        padding: 1em;
+        text-align: left;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    th {
+        background-color: #4a5568;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f7fafc;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    .form-submit-row {
+        grid-column: 1 / span2;
+    }
+}

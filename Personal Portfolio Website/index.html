@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--
+    Student Name: William Boccasini
+    File Name: Index.html
+    Date: 7/2/26
+-->
+
+<!-- major update for 6/29 is correcting how this displays on mobile devices as there were two copies of the same video in the previous version of the website-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio: William Boccasini</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="portfolioCSS.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>William Boccasini</h1>
+            <h2>Human Services Professional &amp; Software Developer</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact Information</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Professional Profile</h2>
+                <p>Welcome to my professional portfolio! I am a dedicated professional who aims to blend professional experience in the human services with my experience and education in software development and technology with the goal of supporting people with disabilities in their daily lives with custom technology solutions.</p>
+            </section>
+
+            <br>
+
+            <section>
+                <h2>Featured Skills &amp; Projects</h2>
+
+                <div class="mobile-stack">
+                    <div style="margin-bottom: 1.5em;">
+                        <h3>1. Human Services Experience</h3>
+                        <p>Extensive background in assisting individuals with disabilities with diverse functional needs in obtaining and maintaining competitive employment in the community.</p>
+                    </div>
+                    <div style="margin-bottom: 1.5em;">
+                        <h3>2. Assistive Software Engineering</h3>
+                        <p>Designing mobile applications with robust, customized user interfaces that target personal difficulties with day-to-day tasks. Modified technology, such as tablet and smartphone devices, can be used to assist individuals with disabilities find relief in the difficulties they may face in some daily-tasks, which is achieved through in-depth disability-related knowledge and skills in software development.</p>
+                    </div>
+                    <div>
+                        <h3>3. Data Automation &amp; Analysis</h3>
+                        <p>Knowledge in structuring data architectures and automating workflows, with the purpose and mission of creating a work environment that is more inclusive and effective in working with people with disabilities.</p>
+                    </div>
+                </div>
+
+                <div class="desktop-matrix">
+                    <table>
+                        <caption>Core Competency Alignment Matrix</caption>
+                        <tr>
+                            <th>Focus Area</th>
+                            <th>Technical Application</th>
+                            <th>Operational Impact</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Human Services</strong></td>
+                            <td>Vocational support planning and specialized assessment protocols.</td>
+                            <td>Assists individuals with diverse functional requirements in obtaining and maintaining stable competitive employment in the community</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Software Designing and Engineering</strong></td>
+                            <td>Custom UI development via various platforms such as Python and Xcode</td>
+                            <td>Builds specialized assistive interfaces on mobile devices to alleviate barriers in a person's daily life</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data and Business Automation</strong></td>
+                            <td>Utilizing Virtual Reality, Augmented Reality, Data Pipelines, M-code optimization, and technological integration in worker's day-to-day operations</td>
+                            <td>Through the use of various business applications, labor analyses, and technological adaptation, B2B services are available to help businesses decrease work complexity of roles allowing position requirements to fall in the realms of people with disabilities</td>
+                        </tr>
+                    </table>
+                </div>
+
+                    <!--This was such an incredibly fun thing to research and put into effect
+                    which is a html user-interface where they are able to select colors of closed
+                    captioning test to accommodate to what the user best visually comprehends
+                    below are the code that I learned to assist, as well as interjecting JavaScript
+                    to help make it happen and the corresponding CSS code-->
+
+                    <div class="caption-controls" aria-label="Caption Customization Panel">
+                        <h4>Customize Captions</h4>
+                        <div class="control-group">
+                            <label for="textColorSelect">Text Color:</label>
+                            <select id="textColorSelect">
+                                <option value="#ffffff" selected>White</option>
+                                <option value="#ffff00">Yellow</option>
+                                <option value="#00ff00">Green</option>
+                                <option value="#000000">Black</option>
+                            </select>
+                        </div>
+
+                        <div class="control-group">
+                            <label for="bgColorSelect">Background:</label>
+                            <select id="bgColorSelect">
+                                <option value="rgba(0, 33, 71, 0.85)" selected>Deep Blue (Default)</option>
+                                <option value="rgba(0, 0, 0, 0.9)">Solid Black</option>
+                                <option value="rgba(255, 255, 255, 0.9)">Solide White</option>
+                                <option value="rgba(0, 0, 0, 0.0)">None (Transparent)</option>
+                            </select>
+                        </div>
+
+                        <h4 style="margin-top: 1em;">Watch an Assistive App Demo that can use person specific modifications to aid in adaptation, such as by using modified captioning to help those who read differently:</h4>
+                            <video controls width="100%" preload="metadata" poster="ParksHobby.jpeg">
+                                <source src="ParkVideo.mp4" type="video/mp4">
+                                <track src="captions.vtt" kind="captions" srclang="en" label="English Captions With Accommodations" default>
+                                Your browser does not support native HTML5 video playback.
+                            </video>
+                </div>
+            </section>
+
+            <br>
+
+            <section>
+                <h2>Connect With Me</h2>
+                <p>I am always looking to collaborate with fellow professionals, human service orgainzations, and tech innovators!</p>
+                <p class="accent-text">Navigate to the Contact Information section above to access my email or professional networking links!</p>
+                <div class="desktop-only">
+                    <p><strong>Note for Desktop Users:</strong> To download my full portfolio, reach out to request personalized link!</p>
+                </div>
+            </section>
+
+            <br>
+
+            <section>
+                <h2>Assistive Technology Demo: For those with Intellectual Disabilities, to help find context when reading new and difficult material, having a handy tool in the form of a browser extension (similar to what macOS offers) that can always be utilized is to highlight confusing words and have a quick search of that word on the screen to be able to quickly gain context.</h2>
+                <div class="sample-text-box" id="accessibleTextArea">
+                    <p><strong>Sample Interaction Text:</strong>This is a sample of text for demonstration purposes.</p>
+                </div>
+                </section>
+
+            <div id="lookupPopup" class="highlight-popup" style="display: none;">
+                <span id="popupContent"></span>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 William Boccasini. All rights reserved.</p>
+            <p>Completed by: William Boccasini</p>
+        </footer>
+
+        <!--Learning how to implement JavaScript was very helpful in growing my skills in web development-->
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- Existing Caption Customization Scripts ---
+        const textColorSelect = document.getElementById('textColorSelect');
+        const bgColorSelect = document.getElementById('bgColorSelect');
+
+        if(textColorSelect && bgColorSelect) {
+            function updateCaptionStyles() {
+                document.documentElement.style.setProperty('--cue-color', textColorSelect.value);
+                document.documentElement.style.setProperty('--cue-bg', bgColorSelect.value);
+            }
+            textColorSelect.addEventListener('change', updateCaptionStyles);
+            bgColorSelect.addEventListener('change', updateCaptionStyles);
+        }
+
+        // --- Contextual Highlight Search Implementation logic ---
+        const clickableArea = document.getElementById('accessibleTextArea');
+        const popup = document.getElementById('lookupPopup');
+        const popupContent = document.getElementById('popupContent');
+
+        document.addEventListener('selectionchange', () => {
+            const currentSelection = window.getSelection();
+            const selectedText = currentSelection.toString().trim();
+
+            // Clear display if choice frame limits are void or out of target component context
+            if (!selectedText || !clickableArea.contains(currentSelection.anchorNode)) {
+                popup.style.display = 'none';
+                return;
+            }
+
+            // Restrict multi-word query over-firing states
+            if (selectedText.split(/\s+/).length <= 3) {
+                const range = currentSelection.getRangeAt(0);
+                const rect = range.getBoundingClientRect();
+
+                // Compute alignment layout placement positions relative to page scroll indexes
+                popup.style.left = `${rect.left + window.scrollX}px`;
+                popup.style.top = `${rect.bottom + window.scrollY + 8}px`;
+
+                // Safe URL construction wrapper block
+                const safeQuery = encodeURIComponent(selectedText);
+                popupContent.innerHTML = `<a href="https://www.google.com/search?q=${safeQuery}" target="_blank">Search "${selectedText}" ↗</a>`;
+                
+                popup.style.display = 'block';
+            }
+        });
+    });
+</script>
+    </body>
+</html>
+
